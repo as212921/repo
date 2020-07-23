@@ -1,0 +1,19 @@
+Origin: repo.as212921.net
+Label: repo.as212921.net
+Codename: border
+Date: Thu, 23 Jul 2020 15:30:40 UTC
+Architectures: amd64
+Components: main
+Description: AS212921 border router package repository
+MD5Sum:
+ 963eb706887c3e2eea1052f4c0f80e73 3569 main/binary-amd64/Packages
+ 7b5faad2fe9de3d92cfa4163d62ce8bd 1239 main/binary-amd64/Packages.gz
+ f8e8acb1a42aba6e4b55b195c9303016 142 main/binary-amd64/Release
+SHA1:
+ a2175f5206b5e3c852e981b389a2e9c6cc46c38b 3569 main/binary-amd64/Packages
+ 4dfbd9bf70459184b8ebf98223884bab70db3a3a 1239 main/binary-amd64/Packages.gz
+ 8a529a90b658a7ce05f122307e282715bd318a19 142 main/binary-amd64/Release
+SHA256:
+ 303e9faa86cbe95fd4ab3fe6bd16e36a9d233ad4e72399e65f6c969a5a7839c4 3569 main/binary-amd64/Packages
+ b48922eb56d780edb7a40a9101ce49fbe12e9594fd591d470c2deb3590bbd797 1239 main/binary-amd64/Packages.gz
+ 49e9c4919b9454d1f4455ac1589bf31c33950039ec66b3b06204932955c1e73e 142 main/binary-amd64/Release

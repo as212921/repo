@@ -1,0 +1,7 @@
+Origin: repo.as212921.net
+Label: repo.as212921.net
+Codename: border
+Architectures: amd64
+Components: main
+Description: AS212921 border router package repository
+SignWith: D7727E1A
