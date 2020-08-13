@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: repo.as212921.net
 Label: repo.as212921.net
 Codename: border
-Date: Thu, 23 Jul 2020 15:30:40 UTC
+Date: Thu, 13 Aug 2020 15:53:59 UTC
 Architectures: amd64
 Components: main
 Description: AS212921 border router package repository
@@ -22,15 +22,17 @@ SHA256:
  49e9c4919b9454d1f4455ac1589bf31c33950039ec66b3b06204932955c1e73e 142 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEv64VLuNJEajFaUJif0511MXXZsYFAl8ZrSAACgkQf0511MXX
-Zsb9tQv/ZYygPX7gRmewnF54sA9gcgVX18RShM9OKaO6FCz/yjZk/KUsqhA3pM8o
-FWAGg/wKv98KUd/LMrxVOA8G+v7u8asUwSoAyprMm5p5J6B6GV1jNISeck9AO9qr
-F/JHYp/Ar2Thd/q3C+jWqESxEbuDZrE0MKgCrqkfbqR7PFmShE+WLoUrVi7hTtp2
-YRuhKpDrBIi6EF/AtshhSd28fd+1jtz9O5+qRwNy/g+s15QdhPD1uHf9Ny3lXV27
-E0oxo+PT8xErGQoXJsshQlKrHXUNskUv5hm9WIB6PE7BoMY7j2wljhfEzNN8UuRL
-M8ZpfSbsAla79jN3SaHTzFJx6zurZkGzUxKXo/g1f9EdY7HWEnXHd+3nFtBy22N3
-OzYfZ5uihkpwDhgoic+4oGq1IY4tLxpkDqsObjmxXSmqSpwY9kmh7wFAXZrxxbOm
-6V50Uovybh3Hpx/RaUPZTQeL7i10DzoXtq7M6VVTdT3kppzx4NmbX1PUsvE1YCwR
-3PZWJ9M+
-=OC22
+iQIzBAEBCgAdFiEE+fUL4O+fjvFuyAna0JBbatNbNn0FAl81YhsACgkQ0JBbatNb
+Nn21+A/5AYghfcE+psj3MY9ejXAB4W5svbdbb69NSVNod9Ria2cy1j+8i+Hcr0ug
+xkcps7jgOCS3HVSzWhDH5e9j/j/B/x4D9IMYqlEulhVlH+6+HRrxvRRV2Gv1KMo1
+hbCRa/h+SazJiPHK3bYiNQ6ZggdKGbeubMA1ag27zFxpZPBdhwEbWwJz6Fj4gdx+
+mbW++vCDfEQ0djlB90OZP1W0zGy+pDewIfYzmhkmcNjJ3xJrxueKovM+XpC33ogh
+eONL6wYxxG/YK84fP6Rp27LvWkxjq3DJn26emc7MeNXBEuJKT2MvMI1MQvJwYewR
+N+JI4/Qqhjv6WrMR85TYD2FzaP/9ggGCc1y5FgdK5OXWlcbKRmm9gSfV0jicYRwU
+W4B71cf12hnnlHTkRkc/aUExQuFLxrBwqSN90vCRYt7vO9irhJWOGmmn7xeN1Otv
+GiLLf4vkWSBMTfMB0amu5QYjor90DUDTAyIfFkyrx3gWwAAJYogIhi6JGfafQwOU
+fSVsgdzrWYp1nDmor/n1UZ4uA1S+KxRtVQchd5EbdKlXInMaExxNZtRkM8xmZKlZ
+L0gwsMdoxo9yR8I1ofhKYROie3kyTbldhCTPhWPOBpbajxzd9sSu5zj2GJYY88gr
+/jsz4+BFC0hk7ydBLujgzlRrQZ3YehFj+azhwKIbrMFfYMqVoD8=
+=rovO
 -----END PGP SIGNATURE-----
