@@ -3288,18 +3288,18 @@ Description: The vyatta-zone package
  configuration/operational templates and scripts.
 
 Package: vyos-1x
-Version: 1.2.5
+Version: 1.2.5-2+conexuos
 Architecture: all
 Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
-Installed-Size: 3875
-Depends: python3, python3:any (>= 3.3.2-2~), python3-netifaces, python3-jinja2, python3-pystache, python3-psutil, python3-tabulate, python3-six, python3-isc-dhcp-leases, python3-hurry.filesize, python3-vici (>= 5.7.2), python3-bottle, python3-zmq, etherwake, ipaddrcheck, tcpdump, tshark, bmon, hvinfo, file, lsscsi, pciutils, usbutils, procps, snmp, snmpd, openssh-server, ntp, ntpdate, iputils-arping, libvyosconfig0, beep, isc-dhcp-server, isc-dhcp-relay, keepalived (>= 2.0.5), wireguard, tftpd-hpa, igmpproxy, accel-ppp, mdns-repeater, udp-broadcast-relay, pdns-recursor, ssl-cert, nginx-light, vyos-intel-qat
+Installed-Size: 3573
+Depends: python3, python3:any (>= 3.3.2-2~), python3-netifaces, python3-jinja2, python3-pystache, python3-psutil, python3-tabulate, python3-six, python3-isc-dhcp-leases, python3-hurry.filesize, python3-vici (>= 5.7.2), python3-bottle, python3-zmq, ipaddrcheck, tcpdump, tshark, bmon, hvinfo, file, lsscsi, pciutils, usbutils, procps, snmp, snmpd, openssh-server, ntp, ntpdate, iputils-arping, libvyosconfig0, beep, isc-dhcp-server, isc-dhcp-relay, keepalived (>= 2.0.5), wireguard, tftpd-hpa, igmpproxy, accel-ppp, mdns-repeater, udp-broadcast-relay, pdns-recursor, ssl-cert, nginx-light, vyos-qat-kernel-modules, vyos-qat-utilities
 Priority: extra
 Section: contrib/net
-Filename: pool/main/v/vyos-1x/vyos-1x_1.2.5_all.deb
-Size: 160020
-SHA256: 2fe868e8b6a70bcb6293e70c8fab1382b1a3410cbe59d063838f8c8c6ba1ac14
-SHA1: 2720adc74cb591d181b166540a10235fa8726684
-MD5sum: 43514fb3b3593fe4d0973a40329be1bc
+Filename: pool/main/v/vyos-1x/vyos-1x_1.2.5-2+conexuos_all.deb
+Size: 153286
+SHA256: 5930f009e9730d8da369cd9daf0e894aac7df0d70d46d3ce85ed61456c318040
+SHA1: 7e8f768c8b2df366c311762c33daeea7e2be9473
+MD5sum: 80ad4448429cf6d7cafc7019dac62d74
 Description: VyOS configuration scripts and data
  VyOS configuration scripts, interface definitions, and everything
 

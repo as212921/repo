@@ -1,19 +1,19 @@
 Origin: repo.as212921.net
 Label: repo.as212921.net
 Codename: conexuos-1.2
-Date: Sun, 16 Aug 2020 13:05:06 UTC
+Date: Sun, 16 Aug 2020 18:32:55 UTC
 Architectures: amd64
 Components: main
 Description: ConexuOS 1.2 packages repository
 MD5Sum:
- cce07baebb80d91ffeb69e7a41dc9f6a 159734 main/binary-amd64/Packages
- c28aa2a482ad2063ecfcd0b287e2a9d8 46066 main/binary-amd64/Packages.gz
+ a481e54689467e802ab9c88a9d3a4865 159774 main/binary-amd64/Packages
+ 1d0de3975c6b6ad70fc254cc424923af 46072 main/binary-amd64/Packages.gz
  cbfeb24f2b82ec38fc9394741fdb841c 133 main/binary-amd64/Release
 SHA1:
- c7a27c4abf18837a4d2a3c844eee775e1f535a9d 159734 main/binary-amd64/Packages
- 4f710851bdd89888ac331999941417bbe39026f4 46066 main/binary-amd64/Packages.gz
+ bdbdb8cdc59d41bc6c904bcfae18465bb0e8413e 159774 main/binary-amd64/Packages
+ e84d674eee06c2d7cd2432220885deedb7ec25da 46072 main/binary-amd64/Packages.gz
  27e7e782e3741fca8af06d5122ef623782ffbdf9 133 main/binary-amd64/Release
 SHA256:
- 78adfa0285297a8c45d0b3ab6e679b13f05a60550ae589449318c4d36a32ad52 159734 main/binary-amd64/Packages
- 2f23e57d80399eaf6bdd189bde24a4360b961e8e3b0b31152c3d0fec6a3734ea 46066 main/binary-amd64/Packages.gz
+ 387c4d23fb7132e50dd0fdaa982dbad76de7694e6252f13366e224f6ec465d07 159774 main/binary-amd64/Packages
+ 9d8deb5b52eea7ce17ceddd799a72542d2382c40ded6958e14e48f048d43083e 46072 main/binary-amd64/Packages.gz
  4ab43fb693504a34424d3051ed673bff66487fdd3f4ff5917fad4756a6657d83 133 main/binary-amd64/Release
