@@ -3,6 +3,6 @@ Label: repo.as212921.net
 Codename: conexuos-1.2
 Architectures: amd64
 Components: main
-Update: vyos
+Update: vyos vyos-debian
 Description: ConexuOS 1.2 packages repository
 SignWith: D0905B6AD35B367D

@@ -4,35 +4,35 @@ Hash: SHA512
 Origin: repo.as212921.net
 Label: repo.as212921.net
 Codename: conexuos-1.2
-Date: Sun, 16 Aug 2020 18:32:55 UTC
+Date: Sun, 16 Aug 2020 18:44:44 UTC
 Architectures: amd64
 Components: main
 Description: ConexuOS 1.2 packages repository
 MD5Sum:
- a481e54689467e802ab9c88a9d3a4865 159774 main/binary-amd64/Packages
- 1d0de3975c6b6ad70fc254cc424923af 46072 main/binary-amd64/Packages.gz
+ f768b2f210d6816680ee59ec648e5f5f 172857 main/binary-amd64/Packages
+ 90c16bb35b8e408be3ef73f00bac3761 49266 main/binary-amd64/Packages.gz
  cbfeb24f2b82ec38fc9394741fdb841c 133 main/binary-amd64/Release
 SHA1:
- bdbdb8cdc59d41bc6c904bcfae18465bb0e8413e 159774 main/binary-amd64/Packages
- e84d674eee06c2d7cd2432220885deedb7ec25da 46072 main/binary-amd64/Packages.gz
+ 50d2c117d9d0df71477607b4d127bb14adf38f3d 172857 main/binary-amd64/Packages
+ 33e68074049d14a3c0bb3ee298b3d1f10c9124e3 49266 main/binary-amd64/Packages.gz
  27e7e782e3741fca8af06d5122ef623782ffbdf9 133 main/binary-amd64/Release
 SHA256:
- 387c4d23fb7132e50dd0fdaa982dbad76de7694e6252f13366e224f6ec465d07 159774 main/binary-amd64/Packages
- 9d8deb5b52eea7ce17ceddd799a72542d2382c40ded6958e14e48f048d43083e 46072 main/binary-amd64/Packages.gz
+ fb26a960e07ceced1a122cddbb8eeb8d96f619f5c1379c4044d22649fbf83fa6 172857 main/binary-amd64/Packages
+ b3fbcc5f17f4a8bbb59981d7a5cc93488034c27a9b83e30b817431e7981271e2 49266 main/binary-amd64/Packages.gz
  4ab43fb693504a34424d3051ed673bff66487fdd3f4ff5917fad4756a6657d83 133 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE+fUL4O+fjvFuyAna0JBbatNbNn0FAl85e9sACgkQ0JBbatNb
-Nn0StA//afMIjC4OJiiIaF1l9E7wSE6aXMLJcdbkFU7uDNmlN04mt/dA26kEnZ1d
-v5e4wYgGmz8ZYgLLMBODFv4VBTUAFGjFyT9b+e4KgAx7hfM0/PnrA8dSXNOELC+u
-bYkT+D+DtRzZXYI6ggkNQgZvWOcYaYhWi80O+SFmSJzCtsKxUKWuGhOGpBph+sZt
-l5aA7fxjhSmWH6wMZZ6p9xvU1Q0eyjoNP78BNqerM8VhvsGbqxbcaag948r9EByS
-MU8jMxzbbiPWoQe0BHlcmEAM5ssH0U6ra3F7W9CusUpXrob4bd1qzD4GSqtwb9UY
-9+y9jV/0E/2dey3nCyVUS6CSbpbYWNBqeEh8VapCcvH5QVKySZniZ3cbQdYjYAnD
-OJBZJTlR6PVb+bFM76GaqME/4cJgkD9MDJhvVtU7yGKb67y3DkJKLWs2DTBpx9t9
-c0X1yBE0CfoAy9dmlYrbtMRAvmxBtkx+rraEnikIyENgT/wvb2ygqPJt6rdbCZXC
-Js8jbm6p58l0TEiZ0KbA/nSGLlwPksrnvDro7sJA/If+LQJec0UYKjXQ4/eooFSI
-P+BJWiYogGb4IvO3uviv4Oh8HJdW3KlErJerjQbwCdeTWRQJneuXlwheAajBkWRV
-1+WhYkwcfNasHt9to+wAtLd1/Yp1aUEbWbM8lOtF2nQgX1m1x5I=
-=TZ4U
+iQIzBAEBCgAdFiEE+fUL4O+fjvFuyAna0JBbatNbNn0FAl85fp0ACgkQ0JBbatNb
+Nn25gQ//U6n6FUnjOMb1BB9Aj4nQ73XJ0mL8dkDbTpoJZ5gvqBMHyZ9GrbMbCX2w
+A4/s1MtiyTblVE/PxFB5y5UfRUaD+YqAVpNxdj2OdfoCAjD0e8iaMB78Nm/lDHOa
+TwX6dxmLnlJNf3GcjpqSS6q5p8jNG3RLceJomfdfLZX7Tvu/fRlNS65AvZh0ChPx
+GxY69F8vZm5YvREDgihon6yxZTLcJhxM0NIV6rX0eNj4Yf97ndFDWrLupQyUHIPy
+epze/XtqOQrDGVQz4TIrHaKmhWVsqXR/XzS5+5r8cHE3Fx+vqRPGHSyP7sHvQK0Y
+jrc+z/hi98llJ9kczgmbJ6UZBxoeaWh6qUU7IhLXjCVr3pOSlX9By0OSx+OnC358
+ie/SeUlMg+96Fg/I9VLCfKr9E6lhdQGDROUQga4YM5NX/OIj1qBVBN+lfAkoEcMR
+i+dbC7NaAzMUKLarkXyCC/r8iEV5p2zJD5n4g+ypYn2PPkL7/M/al573wo1zZtjg
+nsBPz7d9/m8UVHN2brMOO1DuMSK1cmCKsHgIC8llhOs7OnZmW+YUPKiR3N1jvOcJ
+59zWlY7DD2aab1k2uiCuNSjAIlpThPQChgDlDNtTuSCot2HqexQfRGpyjEQZ+vd1
+AeGDxjouUZ3bs5uF0A0ntBWNh6KUevTiZAFFWRva90fKkPi/HVM=
+=fMu8
 -----END PGP SIGNATURE-----

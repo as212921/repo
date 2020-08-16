@@ -37,19 +37,19 @@ Description: automatic BGP filter generator using RADB data
 
 Package: charon-cmd
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 224
-Depends: libstrongswan (= 5.7.2-1), libc6 (>= 2.4), strongswan-libcharon
+Depends: libstrongswan (= 5.7.2-1+vyos2), libc6 (>= 2.4), strongswan-libcharon
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/charon-cmd_5.7.2-1_amd64.deb
-Size: 96654
-SHA256: ab347724245313e798b3924eec5c593f4888c0c8758f4d75f0fb710c07a913f8
-SHA1: 4976525b19a1d45f6797842a2be28260d784181e
-MD5sum: 4d2ca5abf2729dc266b5c74fd75ddf90
+Filename: pool/main/s/strongswan/charon-cmd_5.7.2-1+vyos2_amd64.deb
+Size: 96662
+SHA256: bab095ccb69896b5547713590edea1d7e46f26a8c270bbaed5588d0b907c2f38
+SHA1: 3c04e8b322eace7741ca4dfb36271424adb6287e
+MD5sum: efbf6b871754abe64d081a65b368c687
 Description: standalone IPsec client
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -59,19 +59,19 @@ Description: standalone IPsec client
 
 Package: charon-systemd
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 246
-Depends: libstrongswan (= 5.7.2-1), strongswan-swanctl, init-system-helpers (>= 1.18~), libc6 (>= 2.4), libsystemd0, strongswan-libcharon
+Depends: libstrongswan (= 5.7.2-1+vyos2), strongswan-swanctl, init-system-helpers (>= 1.18~), libc6 (>= 2.4), libsystemd0, strongswan-libcharon
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/charon-systemd_5.7.2-1_amd64.deb
-Size: 93366
-SHA256: 8735b08f33f7088a1bf58638e02c8a0983434be9da1d2bcc63a2e00b32890815
-SHA1: 575a25f4b1ca06af680c12419b415b833cb100b7
-MD5sum: dd35c4c4344cd841526ede3e70c57811
+Filename: pool/main/s/strongswan/charon-systemd_5.7.2-1+vyos2_amd64.deb
+Size: 93596
+SHA256: 21d7cee19b0a1903a0a31df91b604d69aed0e865fdd556c2421db4d99f76fff8
+SHA1: a7ed204a16c9f47c09141d8866c2ea7067b63005
+MD5sum: c81b0d8ab69933bb343a65a2eec8a142
 Description: strongSwan IPsec client, systemd support
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -378,6 +378,27 @@ Description: FRRouting suite of internet protocols (BGP, OSPF, IS-IS, ...)
  git lives on https://github.com/frrouting/frr.git and the project name
  is commonly abbreviated as "FRR."
 
+Package: frr-pythontools
+Source: frr
+Version: 6.1-dev-1~debian8+1
+Architecture: all
+Maintainer: Nobody <nobody@frrouting.org>
+Installed-Size: 101
+Depends: frr (= 6.1-dev-1~debian8+1), python (>= 2.7), python-ipaddr
+Homepage: http://www.frrouting.org/
+Priority: optional
+Section: net
+Filename: pool/main/f/frr/frr-pythontools_6.1-dev-1~debian8+1_all.deb
+Size: 29462
+SHA256: 6e803a0d01944e5852d5dc20ddd874b116d98cdf2ebbd5ccbeb9cba6ce42b166
+SHA1: d782ba260e4c2898d2139f62da5056361612cebe
+MD5sum: be21df30b36aa0b0707cd9f3d6142c78
+Description: BGP/OSPF/RIP/RIPng/ISIS/PIM/LDP routing daemon (Python Tools)
+ This package includes info files for frr, a free software which manages
+ TCP/IP based routing protocols.  It supports BGP4, BGP4+, OSPFv2, OSPFv3,
+ IS-IS, RIPv1, RIPv2, RIPng, PIM and LDP as well as the IPv6 versions of these.
+Original-Maintainer: <maintainers@frrouting.org>
+
 Package: frr-rpki-rtrlib
 Source: frr
 Version: 7.3.1-0
@@ -443,6 +464,41 @@ Description: Handles update-grub for ec2 instances
  EC2 instances that use grub-legacy as a bootloader need a way to keep
  /boot/grub/menu.lst up to date while not conflicting with grub-pc.
  This package provides that.
+
+Package: hostapd
+Source: wpa (1.1+vyos2+current1)
+Version: 1:1.1+vyos2+current1
+Architecture: amd64
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 1042
+Depends: libc6 (>= 2.14), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libssl1.0.0 (>= 1.0.0), lsb-base (>= 3.2-13), initscripts (>= 2.88dsf-13.1)
+Homepage: http://w1.fi/wpa_supplicant/
+Priority: optional
+Section: net
+Filename: pool/main/w/wpa/hostapd_1.1+vyos2+current1_amd64.deb
+Size: 402690
+SHA256: 129e311cde2299b5190ef3ae98d7c832933c07ffc5b6fe708d592768a80abc3c
+SHA1: f6164f01baeb2d99fac11be1366b545bcfd0cd33
+MD5sum: 863e476ae8b66c7cbeb02ef80d36b367
+Description: user space IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+ Originally, hostapd was an optional user space component for Host AP
+ driver. It adds more features to the basic IEEE 802.11 management
+ included in the kernel driver: using external RADIUS authentication
+ server for MAC address based access control, IEEE 802.1X Authenticator
+ and dynamic WEP keying, RADIUS accounting, WPA/WPA2 (IEEE 802.11i/RSN)
+ Authenticator and dynamic TKIP/CCMP keying.
+ .
+ The current version includes support for other drivers, an integrated
+ EAP authenticator (i.e., allow full authentication without requiring
+ an external RADIUS authentication server), and RADIUS authentication
+ server for EAP authentication.
+ .
+ hostapd works with the following drivers:
+ .
+  * mac80211 based drivers with support for master mode [linux]
+  * Host AP driver for Prism2/2.5/3 [linux]
+  * Driver interface for FreeBSD net80211 layer [kfreebsd]
+  * Any wired Ethernet driver for wired IEEE 802.1X authentication.
 
 Package: hvinfo
 Version: 1.2.0
@@ -646,21 +702,21 @@ Description: provides a sort of cooperative multitasking on a single thread
 
 Package: libcharon-extra-plugins
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 880
-Depends: libstrongswan (= 5.7.2-1), libc6 (>= 2.14), libpam0g (>= 0.99.7.1)
+Depends: libstrongswan (= 5.7.2-1+vyos2), libc6 (>= 2.14), libpam0g (>= 0.99.7.1)
 Breaks: libstrongswan (<= 5.1.1-1), strongswan-ike (<= 5.1.1-1)
 Replaces: libstrongswan (<= 5.1.1-1), strongswan-ike (<= 5.1.1-1)
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/libcharon-extra-plugins_5.7.2-1_amd64.deb
-Size: 251584
-SHA256: 2c9f9be3b7afe26ba18cf88951c8bc9d3c99b5729ad41ec42f01ccac5a326c2b
-SHA1: 317ef9678c3302134e60d31bcedeece9979e8193
-MD5sum: 0635d54cc739f556feb02b6e18963e31
+Filename: pool/main/s/strongswan/libcharon-extra-plugins_5.7.2-1+vyos2_amd64.deb
+Size: 251926
+SHA256: 2d2c8a05e312df7fb93ffc2902e7778b2d6dbd8498e79a3de8ebc68b8de9ff7e
+SHA1: 3e1b4bf718eec20eeb99e6b434ff9cdff78c65a8
+MD5sum: 523a3ca2313d1837f866a023c466ac15
 Description: strongSwan charon library (extra plugins)
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -1048,7 +1104,7 @@ Build-Ids: 2c9828ac453a12a9084101f09ff2fdbce86b0814 47ae628615ecb57bfaf1998746cd
 
 Package: libstrongswan
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 1282
@@ -1060,11 +1116,11 @@ Replaces: strongswan-starter (<< 5.3.5-2)
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/libstrongswan_5.7.2-1_amd64.deb
-Size: 415862
-SHA256: b5ae2d61da9316f57f6eb1f3a40a338f9351cc0ed5e3bcf00a04053583b7d412
-SHA1: 09edbc6bb379b21cb4c570b8fab1cc7ea9f67106
-MD5sum: c7cf0937c5b4ddaa0bce5d7698ef0b09
+Filename: pool/main/s/strongswan/libstrongswan_5.7.2-1+vyos2_amd64.deb
+Size: 415766
+SHA256: 676605b0e4a74150472795d5ea703e73c394b66e4093ddae38999530dd6bbc08
+SHA1: ad4ac669109ed1697915b8ee91e5ace4ef43fb58
+MD5sum: d0a54fbdd01f0b7cbf57ccbb104eefec
 Description: strongSwan utility and crypto library
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -1111,21 +1167,21 @@ Description: strongSwan utility and crypto library
 
 Package: libstrongswan-extra-plugins
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 699
-Depends: libstrongswan (= 5.7.2-1), libc6 (>= 2.14), libcurl3 (>= 7.16.2), libgcrypt20 (>= 1.6.1), libgpg-error0 (>= 1.14), libldap-2.4-2 (>= 2.4.7)
+Depends: libstrongswan (= 5.7.2-1+vyos2), libc6 (>= 2.14), libcurl3 (>= 7.16.2), libgcrypt20 (>= 1.6.1), libgpg-error0 (>= 1.14), libldap-2.4-2 (>= 2.4.7)
 Breaks: libcharon-extra-plugins (<= 5.5.3-1), libstrongswan (<= 5.1.1-1), strongswan-ike (<= 5.1.1-1)
 Replaces: libcharon-extra-plugins (<= 5.5.3-1), libstrongswan (<= 5.1.1-1), strongswan-ike (<= 5.1.1-1)
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/libstrongswan-extra-plugins_5.7.2-1_amd64.deb
-Size: 251880
-SHA256: cfc560e548dfa7740ff054d4a57367704f12b9f8763d90c4705cf8b38d49b93d
-SHA1: 1b44706ea06bd7c1fdbec46d4494e870a0f50b01
-MD5sum: ebe6f5b151113ef217a37dc2002dc44f
+Filename: pool/main/s/strongswan/libstrongswan-extra-plugins_5.7.2-1+vyos2_amd64.deb
+Size: 251878
+SHA256: 3520a8e74933ecba378c284d604eeaecc8c3355938af6881484002902de12ff2
+SHA1: 85e351a589efb59a871f2e59765614b0604367d2
+MD5sum: 237bf0452ad521720409830d1ed57974
 Description: strongSwan utility and crypto library (extra plugins)
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -1153,21 +1209,21 @@ Description: strongSwan utility and crypto library (extra plugins)
 
 Package: libstrongswan-standard-plugins
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
-Installed-Size: 393
-Depends: libstrongswan (= 5.7.2-1), iptables, libc6 (>= 2.14), libssl1.0.0 (>= 1.0.2~beta3)
+Installed-Size: 399
+Depends: libstrongswan (= 5.7.2-1+vyos2), iptables, libc6 (>= 2.14), libssl1.0.0 (>= 1.0.1)
 Breaks: libstrongswan (<= 5.1.1-1), strongswan-ike (<= 5.1.1-1)
 Replaces: libstrongswan (<= 5.1.1-1), strongswan-ike (<= 5.1.1-1)
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/libstrongswan-standard-plugins_5.7.2-1_amd64.deb
-Size: 138160
-SHA256: b25f5c7b6ba877941fa3b85d6c953a7c89b7ebc22eb67348a3b4034432500fc4
-SHA1: edd2818fa514337dc454591c371e07c4c137fed9
-MD5sum: 0c35f11727ee6162e195a21cbd8fc966
+Filename: pool/main/s/strongswan/libstrongswan-standard-plugins_5.7.2-1+vyos2_amd64.deb
+Size: 139722
+SHA256: 03146df586b4a320023f6896688a66295a04587c84769bb23f0332b7c77cbf82
+SHA1: 1e9b35c9241ff0b63c7815df7e261a4fdaab3e9b
+MD5sum: 76ae1bdb0e23770371a6ff4e56f5ea91
 Description: strongSwan utility and crypto library (standard plugins)
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -1249,6 +1305,33 @@ SHA256: 9b18d99e59b63d48994f4efb378b76dbd3a861c6087636b71d1974694c7f3cae
 SHA1: cf6a85874ce2f6bd9b8ea9e123f1847180f17f3f
 MD5sum: 3e5f5c3e624f0af585ed7fde727fe15a
 Description: Libyang is YANG data modelling language parser and toolkit written (and providing API) in C.
+
+Package: libyang-dev
+Source: libyang
+Version: 0.16.105-1
+Architecture: amd64
+Maintainer: David Lamparter <equinox-debian@diac24.net>
+Installed-Size: 483
+Depends: libpcre3-dev, libyang0.16 (= 0.16.105-1)
+Homepage: https://netopeer.liberouter.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/liby/libyang/libyang-dev_0.16.105-1_amd64.deb
+Size: 86588
+SHA256: fe9cc6e3b173ca56ef49428c281e96bf76c0f910aa75cf85098076411484e8f4
+SHA1: 1381a94c3b82b365e151a23c137a332fae5566d0
+MD5sum: 9e5d5d4e785fea35545f88c24f724d4e
+Description: parser toolkit for IETF YANG data modeling - development files
+ Libyang implements functions to process schemas expressed in the
+ YANG data modeling language defined by the IETF in RFCs 6020/7950.
+ Schemas expressed in this language primarily describe configuration
+ used by larger network equipment like routers and switches.
+ .
+ In addition to handling the schemas itself, the library also provides
+ functions to process data described by the schemas.
+ .
+ This package contains the C headers, a pkgconfig file, and .so entry point
+ for libyang.
 
 Package: libyang0.16
 Source: libyang
@@ -1790,6 +1873,111 @@ Description: Open VMware Tools for virtual machines hosted on VMware (CLI)
  .
  This package contains only the core user-space programs and libraries.
 
+Package: open-vm-tools-dbg
+Source: open-vm-tools
+Version: 2:10.0.5-3227872-1+vyos2+current1
+Architecture: amd64
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Installed-Size: 2670
+Depends: open-vm-tools (= 2:10.0.5-3227872-1+vyos2+current1), open-vm-tools-desktop (= 2:10.0.5-3227872-1+vyos2+current1)
+Homepage: http://open-vm-tools.sourceforge.net/
+Priority: extra
+Section: debug
+Filename: pool/main/o/open-vm-tools/open-vm-tools-dbg_10.0.5-3227872-1+vyos2+current1_amd64.deb
+Size: 1860534
+SHA256: 4f46dd0f90d15556f47c7646b0c2944354266a31ae82b49b116aa0d42d69dc1b
+SHA1: bee7b99a09b0c736b930a74a9c890d4a2690cdee
+MD5sum: 1500b533f21feddfd6a51b79bb69e772
+Description: Open VMware Tools for virtual machines hosted on VMware (debug)
+ The Open Virtual Machine Tools (open-vm-tools) project is an open source
+ implementation of VMware Tools. It is a suite of virtualization utilities and
+ drivers to improve the functionality, user experience and administration of
+ VMware virtual machines.
+ .
+ This package contains the debugging symbols.
+
+Package: open-vm-tools-desktop
+Source: open-vm-tools
+Version: 2:10.0.5-3227872-1+vyos2+current1
+Architecture: amd64
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Installed-Size: 826
+Depends: init-system-helpers (>= 1.18~), libatk1.0-0 (>= 1.12.4), libatkmm-1.6-1 (>= 2.22.1), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libcairomm-1.0-1 (>= 1.6.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libfuse2 (>= 2.6), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libglibmm-2.4-1c2a (>= 2.42.0), libgtk2.0-0 (>= 2.24.0), libgtkmm-2.4-1c2a (>= 1:2.24.0), libice6 (>= 1:1.0.0), libicu52 (>= 52~m1-1~), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libpangomm-1.4-1 (>= 2.27.1), libsigc++-2.0-0c2a (>= 2.2.0), libsm6, libstdc++6 (>= 4.6), libx11-6 (>= 2:1.4.99.1), libxext6, libxi6, libxinerama1, libxrandr2 (>= 2:1.2.0), libxrender1, libxtst6, open-vm-tools (= 2:10.0.5-3227872-1+vyos2+current1)
+Recommends: open-vm-tools-dkms, xauth, xserver-xorg-input-vmmouse, xserver-xorg-video-vmware, fuse
+Suggests: xdg-utils
+Breaks: open-vm-tools (<< 2:10.0.0~)
+Replaces: open-vm-tools (<< 2:10.0.0~)
+Homepage: http://open-vm-tools.sourceforge.net/
+Priority: extra
+Section: admin
+Filename: pool/main/o/open-vm-tools/open-vm-tools-desktop_10.0.5-3227872-1+vyos2+current1_amd64.deb
+Size: 205240
+SHA256: ab7aa4c8746ec177625ad6aed5e2ba4dfdcdffb28ee1e1afc216603b96d543ed
+SHA1: 4d172eb11ee1e1b6450cb0b9fc7b91d23d45f904
+MD5sum: a0f08d9742b16601f62a8be368f8f7c1
+Description: Open VMware Tools for virtual machines hosted on VMware (GUI)
+ The Open Virtual Machine Tools (open-vm-tools) project is an open source
+ implementation of VMware Tools. It is a suite of virtualization utilities and
+ drivers to improve the functionality, user experience and administration of
+ VMware virtual machines.
+ .
+ This package contains the user-space programs and libraries that are essential
+ for improved user experience of VMware virtual machines.
+
+Package: open-vm-tools-dev
+Source: open-vm-tools
+Version: 2:10.0.5-3227872-1+vyos2+current1
+Architecture: amd64
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Installed-Size: 2800
+Breaks: open-vm-tools (<< 2:9.10.2-2822639-2~)
+Replaces: open-vm-tools (<< 2:9.10.2-2822639-2~)
+Homepage: http://open-vm-tools.sourceforge.net/
+Priority: extra
+Section: devel
+Filename: pool/main/o/open-vm-tools/open-vm-tools-dev_10.0.5-3227872-1+vyos2+current1_amd64.deb
+Size: 589244
+SHA256: aa36909e0730a01a3174f815b47b48d0442d83e09a26f06afd2a3e50d2fadffd
+SHA1: e244fe926e0a80ae699beb189858a876a4a07b5c
+MD5sum: ed8e4ba02e445c50dcc615d96878126d
+Description: Open VMware Tools for virtual machines hosted on VMware (development)
+ The Open Virtual Machine Tools (open-vm-tools) project is an open source
+ implementation of VMware Tools. It is a suite of virtualization utilities and
+ drivers to improve the functionality, user experience and administration of
+ VMware virtual machines.
+ .
+ This package contains the development files.
+
+Package: open-vm-tools-dkms
+Source: open-vm-tools
+Version: 2:10.0.5-3227872-1+vyos2+current1
+Architecture: all
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Installed-Size: 6221
+Depends: dkms (>= 2.1.0.0), make
+Recommends: open-vm-tools
+Suggests: open-vm-tools-desktop
+Breaks: open-vm-tools (<< 2:9.4.0-1280544-8~)
+Replaces: open-vm-tools (<< 2:9.4.0-1280544-8~)
+Homepage: http://open-vm-tools.sourceforge.net/
+Priority: extra
+Section: kernel
+Filename: pool/main/o/open-vm-tools/open-vm-tools-dkms_10.0.5-3227872-1+vyos2+current1_all.deb
+Size: 425792
+SHA256: 17b1745eb62e610c61def3e56ae46404f9a5945fd2d2222888cd02520ab2d868
+SHA1: 0f407259a2b149da47a38e174667a479aaea3f42
+MD5sum: cc17f471eca86b5e520719cce886e78c
+Description: Open VMware Tools vmxnet kernel module (deprecated)
+ The Open Virtual Machine Tools (open-vm-tools) project is an open source
+ implementation of VMware Tools. It is a suite of virtualization utilities and
+ drivers to improve the functionality, user experience and administration of
+ VMware virtual machines.
+ .
+ This package provides the source code for the vmxnet module, which was
+ superseded by vmxnet3. You should only install this package if you know
+ that you need the legacy vnxnet module.
+ Kernel source or headers are required to compile it using DKMS.
+
 Package: pdns-backend-bind
 Source: pdns
 Version: 4.3.0+HEAD.0.gca0768cd2-1pdns.jessie
@@ -2107,23 +2295,55 @@ Description: Redistribute zones via AXFR and IXFR
  PowerDNS server components to work.
 
 Package: pdns-recursor
-Version: 4.1.8-2
+Version: 4.1.15-1pdns.jessie
 Architecture: amd64
-Maintainer: pdns-recursor packagers <pdns-recursor@packages.debian.org>
-Installed-Size: 6759
-Depends: adduser, dns-root-data, init-system-helpers (>= 1.18~), libboost-context1.55.0, libc6 (>= 2.17), libgcc1 (>= 1:4.1.1), liblua5.2-0, libpci3 (>= 1:3.2.1-1), libprotobuf9, libsensors4 (>= 1:3.0.0), libsnmp30 (>= 5.7.2.1+vyos2+current1~dfsg), libsodium13 (>= 0.6.0), libssl1.0.0 (>= 1.0.1d), libstdc++6 (>= 4.9), libsystemd0, libwrap0 (>= 7.6-4~)
-Built-Using: publicsuffix (= 20160703-0+deb8u1)
-Homepage: https://www.powerdns.com/
-Priority: optional
+Origin: PowerDNS
+Maintainer: PowerDNS Autobuilder <powerdns.support@powerdns.com>
+Installed-Size: 6822
+Depends: libboost-context1.55.0, libc6 (>= 2.17), libgcc1 (>= 1:4.1.1), libluajit-5.1-2, libpci3 (>= 1:3.2.1-1), libprotobuf9, libsensors4 (>= 1:3.0.0), libsnmp30 (>= 5.7.2.1+dfsg-1+deb8u1+b1~dfsg), libsodium13 (>= 0.6.0), libssl1.0.0 (>= 1.0.1d), libstdc++6 (>= 4.9), libsystemd0, libwrap0 (>= 7.6-4~), init-system-helpers (>= 1.18~), lsb-base (>= 3.0-6), adduser
+Recommends: pdns-doc
+Replaces: pdns
+Homepage: http://www.powerdns.com/
+Priority: extra
 Section: net
-Filename: pool/main/p/pdns-recursor/pdns-recursor_4.1.8-2_amd64.deb
-Size: 1632166
-SHA256: 25016c0846eadf94e27be7333334c26d3ee99935efb6730c8fee241bf79cb7f1
-SHA1: 7c5c7604d98519b252d0fd0bd4f7a9191caa230d
-MD5sum: 4d4f81ffe84fa5dff6b370fa25fe1afa
-Description: PowerDNS Recursor
- High-performance resolving name server, utilizing multiple
- processor and including Lua scripting capabilities.
+Filename: pool/main/p/pdns-recursor/pdns-recursor_4.1.15-1pdns.jessie_amd64.deb
+Size: 1644152
+SHA256: e34d926448011ca31732997e6525c5020c3bce16f3c7bc56a0f6422b696fe232
+SHA1: 46cc985ac86e6864853e85cee1cd4cd7999ea70c
+MD5sum: aaac86d7e5fe6316c67132f3e1ca888c
+Description: PowerDNS recursor
+ PowerDNS is a versatile nameserver which supports a large number
+ of different backends ranging from simple zonefiles to relational
+ databases and load balancing/failover algorithms.
+ PowerDNS tries to emphasize speed and security.
+ .
+ This is the recursive nameserver that goes out to the internet and
+ resolve queries about other domains.
+
+Package: pdns-recursor-dbg
+Source: pdns-recursor
+Version: 4.1.15-1pdns.jessie
+Architecture: amd64
+Origin: PowerDNS
+Maintainer: PowerDNS Autobuilder <powerdns.support@powerdns.com>
+Installed-Size: 18992
+Depends: pdns-recursor (= 4.1.15-1pdns.jessie)
+Homepage: http://www.powerdns.com/
+Priority: extra
+Section: debug
+Filename: pool/main/p/pdns-recursor/pdns-recursor-dbg_4.1.15-1pdns.jessie_amd64.deb
+Size: 18096576
+SHA256: a8c74657f67ccde8064626d91b80ffd02a8547b7c3379af74d966d83ee2ddd7a
+SHA1: e0e3e10231403984cac0207b4878121a4be61bec
+MD5sum: 2a94a983faa382c03fde4c56992ce747
+Description: debugging symbols for PowerDNS recursor
+ PowerDNS is a versatile nameserver which supports a large number
+ of different backends ranging from simple zonefiles to relational
+ databases and load balancing/failover algorithms.
+ PowerDNS tries to emphasize speed and security.
+ .
+ This package contains debugging symbols for PowerDNS to assist in
+ debugging, such as with gdb. It is not required for normal operation.
 
 Package: pdns-server
 Source: pdns
@@ -2518,8 +2738,26 @@ Description: Net-SNMP notification receiver
  snmptrapd is an SNMP application (daemon) that receives and logs SNMP TRAP
  and INFORM messages.
 
+Package: srp-modules
+Source: srp (4.0-OFED.4.4.2.0.7.1.gee7aa0e)
+Version: 4.0-OFED.4.4.2.0.7.1.gee7aa0e.kver.4.14.75-amd64-vyos
+Architecture: all
+Maintainer: Mellanox Technologies <support@mellanox.com>
+Installed-Size: 161
+Depends: mlnx-ofed-kernel-modules
+Homepage: http://www.mellanox.com
+Priority: optional
+Section: kernel
+Filename: pool/main/s/srp/srp-modules_4.0-OFED.4.4.2.0.7.1.gee7aa0e.kver.4.14.75-amd64-vyos_all.deb
+Size: 29608
+SHA256: d9244ef31c4b4195e0e921e9820a1878689722fc92c8eda55f91c94b236224a0
+SHA1: f6e8881eed88aada07b9f41262ef6c233c9f3d10
+MD5sum: a3479b8c9398aa5050f36b109ec2086b
+Description: srp kernel modules
+ This package provides the binary code for the srp kernel modules.
+
 Package: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: all
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 180
@@ -2527,11 +2765,11 @@ Depends: strongswan-charon, strongswan-starter
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/strongswan_5.7.2-1_all.deb
-Size: 92944
-SHA256: 157c86cf8f6c9a57ed69d19a1963d1c4c1428e0796e92baefd96b19803819fcd
-SHA1: b7f71177ed20ec95015de6a8134438fbcefa660a
-MD5sum: ce43151c4f2efbfdfe53622699980729
+Filename: pool/main/s/strongswan/strongswan_5.7.2-1+vyos2_all.deb
+Size: 93008
+SHA256: 84a55ce8d4c7d8622f5f44cc74a8dc96872702dbde5bdbcb5b7fbd030d975a53
+SHA1: cddb6612605c24ca8a77b1d0f020063e0a941736
+MD5sum: 134bf0f3df6b4a6169cf6b12a6eb94d2
 Description: IPsec VPN solution metapackage
  The strongSwan VPN suite uses the native IPsec stack in the standard Linux
  kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -2541,21 +2779,21 @@ Description: IPsec VPN solution metapackage
 
 Package: strongswan-charon
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
-Installed-Size: 252
+Installed-Size: 253
 Pre-Depends: debconf | debconf-2.0
-Depends: iproute2 | iproute, libstrongswan (= 5.7.2-1), strongswan-starter, libc6 (>= 2.4), strongswan-libcharon
+Depends: iproute2 | iproute, libstrongswan (= 5.7.2-1+vyos2), strongswan-starter, libc6 (>= 2.4), strongswan-libcharon
 Provides: ike-server
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/strongswan-charon_5.7.2-1_amd64.deb
-Size: 96300
-SHA256: 497952f0d3e2514848334c08fb128c3bec35be34f76d04f147f645b22799aeb4
-SHA1: ac4c4393df3dc2f952bb6bc52259c9e558b55ea7
-MD5sum: e67fc73d6189e13b1e2388b1e0bc6507
+Filename: pool/main/s/strongswan/strongswan-charon_5.7.2-1+vyos2_amd64.deb
+Size: 96520
+SHA256: b4ccb0c524606d79bb5ce80f3e72871b65c81b17b33e91b7f0c98ab5a4255a6f
+SHA1: 8fbbfc37a04ce3b751f02a265e2699ea8dafd80b
+MD5sum: 347b1e7668ea972ee0c4f32f887f1145
 Description: strongSwan Internet Key Exchange daemon
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -2566,22 +2804,22 @@ Description: strongSwan Internet Key Exchange daemon
 
 Package: strongswan-libcharon
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 920
-Depends: libstrongswan (= 5.7.2-1), libc6 (>= 2.14)
+Depends: libstrongswan (= 5.7.2-1+vyos2), libc6 (>= 2.14)
 Suggests: libcharon-extra-plugins
 Breaks: strongswan-starter (<= 5.6.1-2)
 Replaces: strongswan-starter (<= 5.6.1-2)
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/strongswan-libcharon_5.7.2-1_amd64.deb
-Size: 310338
-SHA256: 95058128235bbfed8fc78a51a6bd23df8c28be0c3efd627f29a27cd959a00ab8
-SHA1: 079875b12a51f11921df4bac3b2bce228daf9fe5
-MD5sum: 597b22f4359f3c791112b9d528a00b1d
+Filename: pool/main/s/strongswan/strongswan-libcharon_5.7.2-1+vyos2_amd64.deb
+Size: 310314
+SHA256: 230f27ccaf18eb818d872a0229fbd73be7cacf55e67bb8a2a548a0d46e44238d
+SHA1: e8b5603e9ab6c2b03bac797955193da516075e9b
+MD5sum: a3974d6f76be7cc5f679f58a45121abd
 Description: strongSwan charon library
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -2593,23 +2831,45 @@ Description: strongSwan charon library
    - counters
    - bypass-lan (disabled by default)
 
+Package: strongswan-libvici
+Source: strongswan
+Version: 5.6.2-2
+Architecture: amd64
+Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
+Installed-Size: 367
+Depends: libc6 (>= 2.14), libstrongswan (= 5.6.2-2)
+Homepage: http://www.strongswan.org
+Priority: optional
+Section: net
+Filename: pool/main/s/strongswan/strongswan-libvici_5.6.2-2_amd64.deb
+Size: 132928
+SHA256: 26684c50d930f14f97c438579e5ef29a9ba0353cc2ffce177f6abd7c350a5d6e
+SHA1: 8b9b4c5ac3bf84e9041c6323b2c7bbbe42b0b01a
+MD5sum: ae70c15b75c886aa5cb6aa8dff4db200
+Description: strongSwan vici library
+ The vici plugin provides VICI, the Versatile IKE Configuration Interface.
+ As its name indicates, it provides an interface for external applications
+ to not only configure, but also to control and monitor the IKE daemon charon.
+ .
+ This package contains the vice library, used by swanctl.
+
 Package: strongswan-pki
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 307
-Depends: libstrongswan (= 5.7.2-1), libc6 (>= 2.4)
+Depends: libstrongswan (= 5.7.2-1+vyos2), libc6 (>= 2.4)
 Breaks: strongswan-starter (<< 5.3.5-2)
 Replaces: strongswan-starter (<< 5.3.5-2)
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/strongswan-pki_5.7.2-1_amd64.deb
-Size: 128258
-SHA256: eaff6916004479908ada395a83275a4ff955e97c7466de40ba150b9f1dfa38b3
-SHA1: 213cd92850b02aa019dccfd633c4887331e86f45
-MD5sum: 609698493f689568784deb3b1e9ea2a7
+Filename: pool/main/s/strongswan/strongswan-pki_5.7.2-1+vyos2_amd64.deb
+Size: 128352
+SHA256: 03d973fed3a18bd2e18de3d9df6d1f7331ce5082223fa47ddb289abb5db630a7
+SHA1: 008dc9482e7897903e7e21451a80b218db20748d
+MD5sum: a1ec2b1d810351a927b86b08b5536f59
 Description: strongSwan IPsec client, pki command
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -2619,21 +2879,21 @@ Description: strongSwan IPsec client, pki command
 
 Package: strongswan-scepclient
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 255
-Depends: libstrongswan (= 5.7.2-1), libc6 (>= 2.4)
+Depends: libstrongswan (= 5.7.2-1+vyos2), libc6 (>= 2.4)
 Breaks: strongswan-starter (<< 5.3.5-2)
 Replaces: strongswan-starter (<< 5.3.5-2)
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/strongswan-scepclient_5.7.2-1_amd64.deb
-Size: 102606
-SHA256: 0c0956001c1ded288efd99a4713143ba8e5398da4443e56e09de366a1185380b
-SHA1: ecad65ad5f620366a3910886e5d588e8c5d8afad
-MD5sum: 12a7927dae37b6de5b0eca0b52774efb
+Filename: pool/main/s/strongswan/strongswan-scepclient_5.7.2-1+vyos2_amd64.deb
+Size: 102648
+SHA256: f6687fe6d6d9d1802d873927eb51040572668707eb4127fca55d157d8a754016
+SHA1: 305bcfdc9d91ef57007838c120d08ec505790c5d
+MD5sum: b8717f644abffe1980e011ab7b84b679
 Description: strongSwan IPsec client, SCEP client
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -2643,21 +2903,21 @@ Description: strongSwan IPsec client, SCEP client
 
 Package: strongswan-starter
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
 Installed-Size: 715
-Depends: adduser, libstrongswan (= 5.7.2-1), lsb-base (>= 3.0-6), debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~), libc6 (>= 2.14)
+Depends: adduser, libstrongswan (= 5.7.2-1+vyos2), lsb-base (>= 3.0-6), debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~), libc6 (>= 2.14)
 Recommends: strongswan-charon
 Conflicts: openswan
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/strongswan-starter_5.7.2-1_amd64.deb
-Size: 243884
-SHA256: 49b29afc2325da5a556e66dfc7c23370bb948ffc51d660edb9c59c1b5af80ed5
-SHA1: 65a2130444b22221937fcb6dc389d83f2edb527a
-MD5sum: f695b67a816d379ae8a0c1eb1bd713c2
+Filename: pool/main/s/strongswan/strongswan-starter_5.7.2-1+vyos2_amd64.deb
+Size: 244048
+SHA256: 2d99b15e28e166bb14ddb6a6f18582b0f73b2e42da1b3b6b51c9dbead17baa51
+SHA1: 448c34b4f727028e0977b16c390a86569a11a7db
+MD5sum: 06b16b358339926f9f50a47370e4e9e2
 Description: strongSwan daemon starter and configuration file parser
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -2668,19 +2928,19 @@ Description: strongSwan daemon starter and configuration file parser
 
 Package: strongswan-swanctl
 Source: strongswan
-Version: 5.7.2-1
+Version: 5.7.2-1+vyos2
 Architecture: amd64
 Maintainer: strongSwan Maintainers <pkg-swan-devel@lists.alioth.debian.org>
-Installed-Size: 589
-Depends: libstrongswan (= 5.7.2-1), libc6 (>= 2.14)
+Installed-Size: 590
+Depends: libstrongswan (= 5.7.2-1+vyos2), libc6 (>= 2.14)
 Homepage: http://www.strongswan.org
 Priority: optional
 Section: net
-Filename: pool/main/s/strongswan/strongswan-swanctl_5.7.2-1_amd64.deb
-Size: 185268
-SHA256: f79d263df11a1684a0a825a3b596ec8c5ee5262250c00b1c61fe3044b1da0054
-SHA1: 410a1432b2de94e50b600053f6acf306505f3843
-MD5sum: b5698cc1990d5f015da5c1332eeac046
+Filename: pool/main/s/strongswan/strongswan-swanctl_5.7.2-1+vyos2_amd64.deb
+Size: 185404
+SHA256: 4ba2ee7f9fc6c70ea26c29aa94e8a7e1ef5d98efd69393c083d7b335f0295160
+SHA1: c82a6fd0fc94c64ff19e161ee3c43e2e79ecd167
+MD5sum: f11ebb97e251749bf82f3ef2bcacd66f
 Description: strongSwan IPsec client, swanctl command
  The strongSwan VPN suite uses the native IPsec stack in the standard
  Linux kernel. It supports both the IKEv1 and IKEv2 protocols.
@@ -3304,52 +3564,52 @@ Description: VyOS configuration scripts and data
  VyOS configuration scripts, interface definitions, and everything
 
 Package: vyos-accel-ppp
-Version: 1.11.2-7
+Version: 1.11.2-8
 Architecture: amd64
 Maintainer: hagbard <vyosdev@derith.de>
 Installed-Size: 1113
-Depends: libc6 (>= 2.17), liblua5.1-0, libpcre3 (>= 1:8.35), libsnmp30 (>= 5.7.2.1+dfsg-1+deb8u2~dfsg), libssl1.0.0 (>= 1.0.0)
+Depends: libc6 (>= 2.17), liblua5.1-0, libpcre3 (>= 1:8.35), libsnmp30 (>= 5.7.2.1+vyos2+current1~dfsg), libssl1.0.0 (>= 1.0.0)
 Homepage: https://accel-ppp.org
 Priority: optional
 Section: net
-Filename: pool/main/v/vyos-accel-ppp/vyos-accel-ppp_1.11.2-7_amd64.deb
-Size: 304990
-SHA256: ed1a4e0924d3a36824c2c9decdf692bf614c104d941f5b4d3a3722fbdc2fd551
-SHA1: 22c5e9ab3e56eaff6650d983ac7c1f5eb5aef79b
-MD5sum: e3374b81fe8a3d8f5a204b4b878f2560
+Filename: pool/main/v/vyos-accel-ppp/vyos-accel-ppp_1.11.2-8_amd64.deb
+Size: 305816
+SHA256: 8a25f1ccdffee7555070d474beddea460b69219314c89ad2c51927793abbebb6
+SHA1: f167173d9bd47db84536101d9ed03a2cb012e7b3
+MD5sum: d6650cc6140aa66dd7bea95928b3721b
 Description: accel-ppp is a high performance VPN server application for linux.
  Its goal is aggregation of various popular VPN techniques to a single application.
 
 Package: vyos-accel-ppp-doc
 Source: vyos-accel-ppp
-Version: 1.11.2-7
+Version: 1.11.2-8
 Architecture: all
 Maintainer: hagbard <vyosdev@derith.de>
 Installed-Size: 55
 Homepage: https://accel-ppp.org
 Priority: optional
 Section: net
-Filename: pool/main/v/vyos-accel-ppp/vyos-accel-ppp-doc_1.11.2-7_all.deb
-Size: 15634
-SHA256: f8a75a99dab561b3e888397e94402456d4ef93e08dcb6d896f0a939b1326d1f3
-SHA1: 65a89b6a6234d387cb2aa7e60078b9d5077b268e
-MD5sum: 3fccf0030004d4795ebb27b1419e2be4
+Filename: pool/main/v/vyos-accel-ppp/vyos-accel-ppp-doc_1.11.2-8_all.deb
+Size: 15642
+SHA256: 66f9a36222373dbf4ca83e0aa2feb407f75552cdd269777d20f450f674f035c2
+SHA1: 5ff4a79f0c69d4ebcdd34b96494ce6fc5f7be033
+MD5sum: 6c7ce8fd65ac28c3873423ee157a914c
 Description: manpages and documentation for accel-ppp.
 
 Package: vyos-accel-ppp-ipoe-kmod
 Source: vyos-accel-ppp
-Version: 1.11.2-7
+Version: 1.11.2-8
 Architecture: amd64
 Maintainer: hagbard <vyosdev@derith.de>
-Installed-Size: 112
+Installed-Size: 1112
 Homepage: https://accel-ppp.org
 Priority: optional
 Section: net
-Filename: pool/main/v/vyos-accel-ppp/vyos-accel-ppp-ipoe-kmod_1.11.2-7_amd64.deb
-Size: 17110
-SHA256: 3bc4cc9506f6c0c0935865acdc7ca3172f0e41d55a4f6c51b929f81cb5c63eb2
-SHA1: 28bbdfa63bfda7d53298404e51ff5593568501fd
-MD5sum: ffef2afa3b2086a3f692a30bfa6b7358
+Filename: pool/main/v/vyos-accel-ppp/vyos-accel-ppp-ipoe-kmod_1.11.2-8_amd64.deb
+Size: 223706
+SHA256: 66ffca43084a5090b6263d48c34d95aece574d7c1ba8106e4a7f6541cdac9c1e
+SHA1: b65825aa0d94278d28e2b4c6d14b517c9ba5227d
+MD5sum: 58e6511efb0f2e489d276ac35d888928
 Description: IPoE kernel module
  Internet Protocol over Ethernet (IPoE) is a method of delivering an IP payload over an Ethernet-based access network or an access network using bridged Ethernet over Asynchronous Transfer Mode (ATM) without using PPPoE. It directly encapsulates the IP datagrams in Ethernet frames, using the standard RFC 894 encapsulation.
   The use of IPoE addresses the disadvantage that PPP is unsuited for multicast delivery to multiple users. Typically, IPoE uses Dynamic Host Configuration Protocol and Extensible Authentication Protocol to provide the same functionality as PPPoE, but in a less robust manner.
@@ -3776,6 +4036,28 @@ Description: fast, modern, secure kernel VPN tunnel (userland utilities)
  WireGuard kernel module.  Currently, it provides only a single tool:
  .
  wg: set and retrieve configuration of WireGuard interfaces
+
+Package: wpasupplicant
+Source: wpa
+Version: 1.1+vyos2+current1
+Architecture: amd64
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
+Installed-Size: 1332
+Depends: libc6 (>= 2.14), libdbus-1-3 (>= 1.1.4), libncurses5 (>= 5.5-5~), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libpcsclite1 (>= 1.0.0), libreadline6 (>= 6.0), libssl1.0.0 (>= 1.0.0), libtinfo5, lsb-base (>= 3.0-6), adduser, initscripts (>= 2.88dsf-13.1)
+Suggests: wpagui, libengine-pkcs11-openssl
+Homepage: http://w1.fi/wpa_supplicant/
+Priority: optional
+Section: net
+Filename: pool/main/w/wpa/wpasupplicant_1.1+vyos2+current1_amd64.deb
+Size: 496896
+SHA256: 8c5512b5f256e93c9f944f53935a7630a305c2dc6471fd55246e39726ac2fb5f
+SHA1: 1e9ccf07000ee7dfb137a3669a05006925f88496
+MD5sum: 4203e28f809f51a2b7584be42e544471
+Description: client support for WPA and WPA2 (IEEE 802.11i)
+ WPA and WPA2 are methods for securing wireless networks, the former
+ using IEEE 802.1X, and the latter using IEEE 802.11i. This software
+ provides key negotiation with the WPA Authenticator, and controls
+ association with IEEE 802.11i networks.
 
 Package: xe-guest-utilities
 Version: 7.16.0-2
