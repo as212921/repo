@@ -1,7 +1,8 @@
 Origin: repo.as212921.net
 Label: repo.as212921.net
-Codename: border
+Codename: conexuos-1.2
 Architectures: amd64
 Components: main
-Description: AS212921 border router package repository
+Update: vyos
+Description: ConexuOS 1.2 packages repository
 SignWith: D0905B6AD35B367D

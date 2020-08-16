@@ -1,0 +1,6 @@
+Name: vyos
+Suite: crux
+Method: http://dev.packages.vyos.net/repositories/crux/vyos
+Components: main
+Architectures: amd64
+VerifyRelease: 32C249BD0DF04B5C
